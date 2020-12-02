@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
  
 PKG_NAME:=MPlayer
-PKG_VERSION:=1.0rc2
+PKG_VERSION:=1.4
 PKG_RELEASE:=1
  
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://www.mplayerhq.hu/MPlayer/releases/
-PKG_MD5SUM:=7e27e535c2d267637df34898f1b91707
+PKG_MD5SUM:=234cf7048bd2cc7410f4d80ac51752fd
  
 PKG_MAINTAINER:= http://www.mplayerhq.hu
 PKG_LICENSE:=GPLv2
@@ -25,7 +25,7 @@ define Package/MPlayer
   SECTION:=multimedia
   CATEGORY:=Multimedia
   DEPENDS:= +libpthread +libjpeg +libncurses +libmad +libc +alsa-lib +zlib +liblzo
-  TITLE:=MPlayer1.0rc2
+  TITLE:=MPlayer1.4
   URL:=$(PKG_SOURCE_URL)
 endef
  
